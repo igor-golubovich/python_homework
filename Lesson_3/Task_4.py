@@ -1,4 +1,4 @@
-# Golubovich Igor for Python Course | homework №3 | task №3
+# Golubovich Igor for Python Course | homework №3 | task №4
 
 import math
 
