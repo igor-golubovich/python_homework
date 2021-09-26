@@ -17,7 +17,6 @@ def inputSeconds(message):
             continue
         else:
             return userInput
-            break
 
 
 time = inputSeconds('Enter the number of seconds from 0 to 86400:\n')
