@@ -32,5 +32,8 @@ seconds = (time % 3600) % 60
 #print(minutes)
 #print(seconds)
 
+
+
+
 print('hours minutes seconds')
 print(hours, minutes, seconds, sep = '      ')
