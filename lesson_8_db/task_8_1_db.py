@@ -1,5 +1,6 @@
 # Golubovich Igor for Python Course | homework №8 | task №1
 
+
 from sqlalchemy import create_engine
 from sqlalchemy.sql.expression import select
 from sqlalchemy.sql.schema import Column, MetaData, Table
@@ -133,8 +134,15 @@ meta.create_all(engine)
 # print(result)
 
 
+# j = students.join(specialities, students.c.id_speciality == specialities.c.id)
+# stmt = select([students.c.first_name ,students.c.last_name , specialities.c.name_specialities]).select_from(j).where(students.c.id_speciality == 4)
+# print(stmt)
+# result = conn.execute(stmt)
+# print([row for row in result])
+
+
 j = students.join(specialities, students.c.id_speciality == specialities.c.id)
-stmt = select([students.c.first_name ,students.c.last_name , specialities.c.name_specialities]).select_from(j).where(students.c.id_speciality == 5)
+stmt = select([students.c.first_name ,students.c.last_name , specialities.c.name_specialities]).select_from(j).where(specialities.c.name_specialities == 'Компьютерная безопасность')
 print(stmt)
 result = conn.execute(stmt)
 print([row for row in result])
