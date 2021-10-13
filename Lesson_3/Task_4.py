@@ -84,3 +84,8 @@ else:
             P = (Ta + Tb + Tc) / 2
             Rt = math.sqrt(P * (P - Ta) * (P - Tb) * (P - Tc)) 
             print('S of triangle = ' + str(Rt))
+
+
+
+
+('Enter function arguments:\n')
